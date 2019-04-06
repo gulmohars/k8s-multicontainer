@@ -1,0 +1,2 @@
+kubectl set image deployment/client-deployment client=gulmohar/multicontainer-client:v2
+kubectl set image deployment/server-deployment server=gulmohar/multicontainer-server:v2
