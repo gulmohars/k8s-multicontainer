@@ -13,7 +13,7 @@ before_install:
   - gcloud auth activate-service-account --key-file service-account.json # login(authorization) to our google cloud account
   - gcloud config set project k8s-multicontainer
   - gcloud config set compute/zone us-central1-a
-  - gcloud container clusters get-credentails k8s-multicontainer
+  - gcloud container clusters get-credentials k8s-multicontainer
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t gulmohar/client -f ./client/Dockerfile.dev ./client
 
