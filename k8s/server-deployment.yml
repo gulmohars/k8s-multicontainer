@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: gulmohar/multicontainer-server
+          image: gulmohar/k8s-multicontainer-server
           ports:
             - containerPort: 5000
           env:

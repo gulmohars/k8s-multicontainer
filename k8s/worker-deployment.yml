@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: worker
-          image: gulmohar/multicontainer-worker
+          image: gulmohar/k8s-multicontainer-worker
           env:
             - name: REDIS_HOST
               value: redis-cluster-ip-service

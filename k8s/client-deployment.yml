@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: gulmohar/multicontainer-client:v2
+          image: gulmohar/k8s-multicontainer-client
           ports:
             - containerPort: 3000
